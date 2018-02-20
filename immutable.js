@@ -51,7 +51,13 @@ console.log(combinedSupers);
   The new object should filter out any scores that are < 34 Array.filter should be used here.
 */
 
-const studentScores
+const studentScores = {
+  name: 'Bob',
+  age: 23,
+  scores: [20, 30, 40, 50]
+};
 
-//console.log(studentScores);
-//console.log(studentAverage);
+const studentAverage = Object.assign(studentScores.scores).filter(number => number > 34);
+
+console.log(studentScores);
+console.log(studentAverage);
